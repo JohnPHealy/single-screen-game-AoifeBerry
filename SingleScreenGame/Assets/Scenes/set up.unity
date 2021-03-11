@@ -239,6 +239,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4799650517401665200, guid: e571ded23cc6d0d4aab2b43061562dc2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 491b64de38d1c3a4093bb63001cf7c7b, type: 3}
+    - target: {fileID: 4799650517401665201, guid: e571ded23cc6d0d4aab2b43061562dc2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7556
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799650517401665201, guid: e571ded23cc6d0d4aab2b43061562dc2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7556
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799650517401665201, guid: e571ded23cc6d0d4aab2b43061562dc2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7556
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799650517401665201, guid: e571ded23cc6d0d4aab2b43061562dc2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799650517401665201, guid: e571ded23cc6d0d4aab2b43061562dc2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.73
+      objectReference: {fileID: 0}
     - target: {fileID: 7269364824449460865, guid: e571ded23cc6d0d4aab2b43061562dc2, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1536,7 +1560,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 0
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
