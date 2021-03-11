@@ -12,12 +12,14 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 10;
     public int currentHealth;
     public HealthBar healthBar;
+    public int chest;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        chest = 0;
     }
 
     // Update is called once per frame
@@ -28,6 +30,19 @@ public class PlayerHealth : MonoBehaviour
             TakenDamage(1);
 
         }
+
+        if (other.gameObject.tag == "Chest")
+        {
+            chest += 1;
+        }
+
+        if (chest >= 6)
+
+        {
+
+            SceneManager.LoadScene("YouWin");
+        }
+
 
     }
 
@@ -41,10 +56,9 @@ public class PlayerHealth : MonoBehaviour
            // Debug.Log("Dead");
             SceneManager.LoadScene("Mainlevel");
         }
-    }
 
-    void death()
-    {
        
     }
+
+  
 }
