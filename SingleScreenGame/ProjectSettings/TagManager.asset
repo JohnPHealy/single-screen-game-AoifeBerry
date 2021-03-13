@@ -7,6 +7,7 @@ TagManager:
   - PatrolPoint
   - Enemy
   - Chest
+  - Fall
   layers:
   - Default
   - TransparentFX
