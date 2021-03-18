@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8338202833424174652}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
-  m_Color: {r: 0.18396229, g: 0.8379117, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.14930165, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -94,8 +94,8 @@ GameObject:
   - component: {fileID: 1320365302677219843}
   - component: {fileID: 1863449324443470057}
   m_Layer: 0
-  m_Name: Pool (1)
-  m_TagString: Untagged
+  m_Name: lava
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,9 +107,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7402533125038790011}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.7266998, y: 36.3239, z: -2.9286046}
-  m_LocalScale: {x: 13.761318, y: 3.054953, z: 1}
+  m_LocalScale: {x: 49.34723, y: 4.047813, z: 1}
   m_Children:
   - {fileID: 337707804750357833}
   m_Father: {fileID: 0}
