@@ -10,6 +10,7 @@ public class Chest : MonoBehaviour
 {
 
     public int chest;
+    public Image Spirit;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,14 @@ public class Chest : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
+
             chest += 1;
+
+            if (other.gameObject.tag == "Fire" && chest >= 6)
+            {
+                SceneManager.LoadScene("YouWin");
+
+            }
 
         }
 
@@ -29,11 +37,6 @@ public class Chest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (chest >= 3)
-            
-        {
-
-            SceneManager.LoadScene("YouWin");
-        }
+        
     }
 }

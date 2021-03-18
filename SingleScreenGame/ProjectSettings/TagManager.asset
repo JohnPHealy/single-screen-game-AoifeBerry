@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Chest
   - Fall
+  - Chest1
+  - Chest2
+  - Fire
   layers:
   - Default
   - TransparentFX
