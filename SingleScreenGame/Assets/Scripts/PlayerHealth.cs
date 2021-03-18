@@ -31,6 +31,13 @@ public class PlayerHealth : MonoBehaviour
 
         }
 
+        if (other.gameObject.tag == "health")
+        {
+            heal(1);
+            Destroy(other.gameObject);
+
+        }
+
         if (other.gameObject.tag == "Chest")
         {
             chest += 1;
@@ -45,6 +52,14 @@ public class PlayerHealth : MonoBehaviour
 
 
     }
+
+    void heal(int damage)
+    {
+        currentHealth += damage;
+        healthBar.SetHealth(currentHealth);
+
+    }
+
 
     void TakenDamage(int damage)
     {

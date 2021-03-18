@@ -12,6 +12,8 @@ TagManager:
   - Chest2
   - Fire
   - FireText
+  - Health
+  - health
   layers:
   - Default
   - TransparentFX
