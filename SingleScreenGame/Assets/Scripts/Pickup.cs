@@ -58,7 +58,7 @@ public class Pickup : MonoBehaviour
             chest += 1;
         }
 
-        if (other.gameObject.tag == "Fire" && chest >= 6)
+        if (other.gameObject.tag == "Fire" && chest >= 5)
          {
             YouWin.gameObject.SetActive(true);
             // SceneManager.LoadScene("YouWin");
