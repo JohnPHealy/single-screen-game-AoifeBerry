@@ -11,6 +11,7 @@ TagManager:
   - Chest1
   - Chest2
   - Fire
+  - FireText
   layers:
   - Default
   - TransparentFX

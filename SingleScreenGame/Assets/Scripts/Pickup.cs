@@ -13,6 +13,8 @@ public class Pickup : MonoBehaviour
     public GameObject Spirit3;
     public int chest;
     public Image Spirit;
+    public GameObject FireText;
+    public GameObject YouWin;
 
 
     void start ()
@@ -58,13 +60,24 @@ public class Pickup : MonoBehaviour
 
         if (other.gameObject.tag == "Fire" && chest >= 6)
          {
-               SceneManager.LoadScene("YouWin");
+            YouWin.gameObject.SetActive(true);
+            // SceneManager.LoadScene("YouWin");
 
-         }
+        }
+        if (other.gameObject.tag == "Fire" && chest <= 6)
+        {
+            FireText.gameObject.SetActive(true);
+        }
 
         }
 
-
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Fire" && chest <= 6)
+        {
+            FireText.gameObject.SetActive(false);
+        }
+    }
     }
 
 
